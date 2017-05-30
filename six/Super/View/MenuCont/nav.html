@@ -1,0 +1,37 @@
+<ul class="nav nav-tabs">
+    <if condition="(ACTION_NAME eq pictext) OR (ACTION_NAME eq link)">
+            <li class="hidden">
+            <a href="__CONTROLLER__/pictext/mid/{$mid}">
+                【{$name}】内容修改
+            </a>
+        </li>
+    <elseif condition="(ACTION_NAME neq pictext) OR (ACTION_NAME neq link)" />
+        <li>
+            <a href="__CONTROLLER__/index/mid/{$mid}">
+                <i class="green ace-icon fa fa-home bigger-120"></i>
+                菜单内容列表
+            </a>
+        </li>
+    </else>
+        <li class="hidden">
+            <a href="__CONTROLLER__/pictext/mid/{$mid}">
+                未知错误
+            </a>
+        </li>
+    </if>
+
+    <if condition="(ACTION_NAME neq pictext) OR (ACTION_NAME neq link)">
+        <li class="hidden">
+            <a href="__CONTROLLER__/add/mid/{$mid}">
+                菜单内容添加
+            </a>
+        </li>
+        <li class="hidden">
+            <a href="__CONTROLLER__/edit/mid/{$mid}">
+                菜单内容修改
+            </a>
+        </li>
+    </if>
+
+
+</ul>

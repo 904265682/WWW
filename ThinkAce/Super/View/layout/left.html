@@ -1,0 +1,90 @@
+<!-- #section:basics/sidebar -->
+<div id="sidebar" class="sidebar responsive">
+	<script type="text/javascript">
+		try{ace.settings.check('sidebar' , 'fixed')}catch(e){}
+	</script>
+
+	<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+		<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+			<button class="btn btn-success">
+				管
+			</button>
+
+			<button class="btn btn-info">
+				理
+			</button>
+
+			<!-- #section:basics/sidebar.layout.shortcuts -->
+			<button class="btn btn-warning">
+				系
+			</button>
+
+			<button class="btn btn-danger">
+				统
+			</button>
+
+			<!-- /section:basics/sidebar.layout.shortcuts -->
+		</div>
+		<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+			<span class="btn btn-success"></span>
+
+			<span class="btn btn-info"></span>
+
+			<span class="btn btn-warning"></span>
+
+			<span class="btn btn-danger"></span>
+		</div>
+	</div><!-- /.sidebar-shortcuts -->
+	<ul class="nav nav-list">
+		<li class="hidden">
+			<a href="{$Think.const.SITE_URL}Super/Index">
+				<!-- <i class="menu-icon fa fa-tachometer"></i>
+				<span class="menu-text"> 欢迎登录【{$Think.session.s_name}】 </span> -->
+			</a>
+		</li>
+		<li class="hidden">
+			<a href="{{ action('Super\Auth\IndexController@getPassword') }}">
+				<i class="menu-icon fa fa-tachometer"></i>
+				<span class="menu-text"> 安全设置 </span>
+			</a>
+		</li>
+
+		<li class="hidden">
+			<a href="{{ action('Super\Home\IndexController@getJump') }}">
+				<i class="menu-icon fa fa-tachometer"></i>
+				<span class="menu-text"> 跳转 </span>
+			</a>
+		</li>
+		<foreach name="auth_infoA" item="v">
+		<li class="">
+			<a href="#" class="dropdown-toggle">
+				<i class="menu-icon fa fa-pencil-square-o"></i>
+				<span class="menu-text"> {$v.auth_name}</span>
+				<b class="arrow fa fa-angle-down"></b>
+			</a>
+			<b class="arrow"></b>
+			<ul class="submenu">
+				<foreach name="auth_infoB" item="vv">
+					<eq name="v.auth_id" value="$vv.auth_pid">
+					<li class="">
+						<a href="{$Think.const.SITE_URL}Super/{$vv.auth_c}/{$vv.auth_a}">
+							<i class="menu-icon fa fa-caret-right"></i>
+							{$vv.auth_name}
+						</a>
+						<b class="arrow"></b>
+					</li>
+					</eq>
+				</foreach>
+			</ul>
+		</li>
+		</foreach>
+
+	</ul><!-- /.nav-list -->
+	<!-- #section:basics/sidebar.layout.minimize -->
+	<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+		<i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+	</div>
+	<script type="text/javascript">
+		try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+	</script>
+</div>

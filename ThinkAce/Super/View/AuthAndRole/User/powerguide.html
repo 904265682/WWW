@@ -1,0 +1,47 @@
+<extend name="layout/layout" />
+
+<block name="nav">
+  <include file="AuthAndRole/User:nav" />
+</block>
+
+<block name="tab-content">
+<style type="text/css">
+    p{
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+</style>
+<!-- <php>
+    $sid=session("s_id");
+    $super=new \Model\SuperModel();
+    $data=$super->relation(true)->find($sid);
+    $name=$data['role']['name'];
+    //选择级别
+    $id=$_GET["id"];
+    $user=$super->find($id);
+</php> -->
+<kbd>当前选择用户：{$user["name"]}</kbd>
+<if condition="$_SESSION['s_name']=='admin' or $name=='国家项目办'">
+<p><a href="{$Think.const.SITE_URL}Super/User/province?id={$_GET[id]}" class="btn btn-danger">省级管理员权限</a> &nbsp;&nbsp;<kbd>管理一个省内所有的市，区，机构</kbd></p>
+</if>
+<if condition="$_SESSION['s_name']=='admin' or $name=='国家项目办' or $name=='省级管理员'">
+<p><a href="{$Think.const.SITE_URL}Super/User/city?id={$_GET[id]}" class="btn btn-warning">地市级管理员权限</a> &nbsp;&nbsp;<kbd>管理一个市内所有的区，机构</kbd></p>
+</if>
+<if condition="$_SESSION['s_name']=='admin' or $name=='国家项目办' or $name=='省级管理员' or $name=='地市级管理员' ">
+<p><a href="{$Think.const.SITE_URL}Super/User/dis?id={$_GET[id]}" class="btn btn-primary">区县级管理员权限</a> &nbsp;&nbsp;<kbd>管理一个区内所有的机构</kbd></p>
+</if>
+<if condition="$_SESSION['s_name']=='admin' or $name=='国家项目办' or $name=='省级管理员' or $name=='地市级管理员' or $name=='区县级管理员'">
+<p><a href="{$Think.const.SITE_URL}Super/User/ins?id={$_GET[id]}" class="btn btn-default">机构管理员权限</a> &nbsp;&nbsp;<kbd>管理机构</kbd></p>
+</if>
+</block>
+
+
+<block name="plugins">
+
+</block>
+
+<block name="scripts">
+
+</present>
+</block>
+

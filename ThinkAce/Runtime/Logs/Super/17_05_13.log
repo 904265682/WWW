@@ -1,0 +1,176 @@
+[ 2017-05-13T14:59:21+08:00 ] 221.2.52.247 /ThinkAce/Super/AuthAndRole/AuthDate?limit=10&offset=0&_=1494658789997
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_pid=0 ) ORDER BY auth_id DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-05-13T14:59:25+08:00 ] 221.2.52.247 /ThinkAce/Super/AuthAndRole/RoleDate?limit=10&offset=0&_=1494658793819
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `role` ORDER BY created_at DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2017-05-13T14:59:28+08:00 ] 221.2.52.247 /ThinkAce/Super/User/areaData?limit=10&offset=0&_=1494658797328
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `super`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-05-13T14:59:35+08:00 ] 221.2.52.247 /ThinkAce/Super/AuthAndRole/AuthDate?limit=10&offset=0&_=1494658804126
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_pid=0 ) ORDER BY auth_id DESC  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-05-13T14:59:40+08:00 ] 221.2.52.247 /ThinkAce/Super/AuthAndRole/RoleDate?limit=10&offset=0&_=1494658809000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `role` ORDER BY created_at DESC  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-05-13T14:59:45+08:00 ] 221.2.52.247 /ThinkAce/Super/Security/SuperLogDate?limit=10&offset=0&_=1494658813789
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0000s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `super_log` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `super_log` WHERE ( name= 'admin'  ) ORDER BY id desc  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2017-05-13T15:00:05+08:00 ] 101.226.89.122 /ThinkAce/Super/Login/logout
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `super_log` (`sql_cont`,`name`,`created_at`,`ip`,`action`,`bz`,`updated_at`,`db_level`) VALUES ('',NULL,'2017-05-13 15:00:05','101.226.89.122','用户登出','','2017-05-13 15:00:05','0')
+
+[ 2017-05-13T15:00:13+08:00 ] 221.2.52.247 /ThinkAce/Super/Menu/oneMenuDate?_=1494658842153
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-05-13T15:00:19+08:00 ] 221.2.52.247 /ThinkAce/Super/Security/SuperLogDate?limit=10&offset=0&_=1494658848039
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `super_log` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `super_log` WHERE ( name= 'admin'  ) ORDER BY id desc  [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-05-13T15:01:32+08:00 ] 221.2.52.247 /ThinkAce/Super/Security/SuperLogDate?limit=10&offset=0&_=1494658920910
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `super_log` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `super_log` WHERE ( name= 'admin'  ) ORDER BY id desc  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-05-13T17:36:29+08:00 ] 221.2.52.247 /ThinkAce/Super/Security/SuperLogDate?limit=10&offset=0&_=1494668218282
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `super` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `super` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `role` WHERE `role_id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `auth` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=0 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `auth` WHERE ( auth_level=1 )  [ RunTime:0.0001s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `super_log` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `super_log` WHERE ( name= 'admin'  ) ORDER BY id desc  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+

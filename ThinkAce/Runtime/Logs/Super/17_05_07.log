@@ -1,0 +1,1775 @@
+[ 2017-05-07T08:30:45+08:00 ] 180.153.201.15 /ThinkAce/Super/Login/Logout
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `super_log` (`sql_cont`,`name`,`created_at`,`ip`,`action`,`bz`,`updated_at`,`db_level`) VALUES ('',NULL,'2017-05-07 08:30:45','180.153.201.15','用户登出','','2017-05-07 08:30:45','0')
+
+[ 2017-05-07T08:35:14+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494117337318
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2017-05-07T08:35:44+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494117367636
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2017-05-07T09:06:34+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '147} ) ORDER BY show_order' at line 1
+ [ SQL语句 ] : SELECT * FROM `menu` WHERE ( up_id = {147} ) ORDER BY show_order 
+
+[ 2017-05-07T09:06:35+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '147} ) ORDER BY show_order' at line 1
+ [ SQL语句 ] : SELECT * FROM `menu` WHERE ( up_id = {147} ) ORDER BY show_order 
+
+[ 2017-05-07T09:07:48+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `menu` WHERE ( up_id = 147,151 ) ORDER BY show_order LIMIT 1  
+
+[ 2017-05-07T09:08:36+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'up_id = 150 up_id = 146 ) ORDER BY show_order LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `menu` WHERE ( up_id = 147 AND up_id = 151 up_id = 150 up_id = 146 ) ORDER BY show_order LIMIT 1  
+
+[ 2017-05-07T09:31:35+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120718576
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2017-05-07T09:32:08+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120751416
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-05-07T09:32:24+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120767260
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-05-07T09:32:55+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120798480
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2017-05-07T09:33:09+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120811697
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2017-05-07T09:35:43+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120966506
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-05-07T09:36:17+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494120999997
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-05-07T09:40:07+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494121230062
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2017-05-07T09:40:35+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494121258557
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2017-05-07T09:42:07+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494121350488
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2017-05-07T09:42:48+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:43:45+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:43:46+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:43:46+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:43:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:43:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:43:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:21+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:27+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:29+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:44+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:46+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:46+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:48+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:48+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:48+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:50:49+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:03+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:04+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:06+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:06+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:06+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:07+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:07+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:07+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:08+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:08+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:08+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:08+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:09+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:09+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:09+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:09+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:11+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:11+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:11+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:11+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:11+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:12+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:12+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:12+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:12+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:13+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:13+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:13+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:19+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:20+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:20+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:21+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:22+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:22+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:24+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:25+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:25+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:26+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T09:51:41+08:00 ] 221.2.52.242 /ThinkAce/Super/Index/index.html
+ERR: XML标签语法错误 : name="<?php echo ($vo["id"]); ?
+
+[ 2017-05-07T10:30:50+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124273370
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-05-07T10:31:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124288728
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-05-07T10:32:38+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124381481
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-05-07T10:32:43+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124386194
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2017-05-07T10:33:00+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124402774
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2017-05-07T10:33:15+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124418010
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2017-05-07T10:33:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124450615
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2017-05-07T10:36:36+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124619231
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2017-05-07T10:36:37+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124620270
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2017-05-07T10:39:57+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124820008
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2017-05-07T10:40:25+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494124848620
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-05-07T10:54:40+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494125703176
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-05-07T11:01:50+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494126133485
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2017-05-07T11:03:21+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494126224718
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-05-07T11:03:26+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494126229533
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2017-05-07T11:30:54+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494127877136
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+ERR: 非法操作:twoMenuDate
+
+[ 2017-05-07T11:30:57+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127880405
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:30:59+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127882431
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:00+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127883501
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:04+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127887059
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:04+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127887761
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:05+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127888279
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:08+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127891431
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:20+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127903200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+ERR: 非法操作:oneMenuDate
+
+[ 2017-05-07T11:31:29+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494127911931
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2017-05-07T11:31:33+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494127916606
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2017-05-07T11:34:32+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494128095779
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-05-07T11:36:25+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494128208546
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2017-05-07T11:37:38+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/alldel
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Super/Controller/MenuController.class.php 第 177 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-05-07T11:37:41+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/alldel
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Super/Controller/MenuController.class.php 第 177 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2017-05-07T11:38:20+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494128323222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2017-05-07T11:38:23+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494128326072
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-05-07T11:39:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128372935
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-05-07T11:39:14+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128376842
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-05-07T11:39:31+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128394740
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-05-07T11:39:34+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128397107
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-05-07T11:39:39+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128402053
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8] Undefined index: id /var/www/html/ThinkAce/Tools/SuperController.class.php 第 14 行.
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-05-07T11:40:58+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128481049
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-05-07T11:41:01+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128484610
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2017-05-07T11:41:21+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494128502432
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-05-07T11:41:32+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494128514188
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2017-05-07T11:41:42+08:00 ] 140.207.185.109 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494128514188
+ERR: 无法加载控制器:Menu
+
+[ 2017-05-07T12:40:37+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132060678
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+
+[ 2017-05-07T12:40:52+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132075731
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2017-05-07T12:40:55+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132078326
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-05-07T12:41:01+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132083884
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2017-05-07T12:41:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132092741
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000561s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2017-05-07T12:41:51+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132134743
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-05-07T12:41:55+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132138596
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-05-07T12:41:58+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132141122
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-05-07T12:43:16+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132219611
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-05-07T12:43:17+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132220271
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2017-05-07T12:43:25+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132228319
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000455s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2017-05-07T12:45:22+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132345474
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-05-07T12:45:33+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132356243
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-05-07T12:45:51+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132374262
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-05-07T12:46:22+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132404953
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-05-07T12:46:26+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132409245
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-05-07T12:48:14+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132516921
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-05-07T12:50:45+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132668135
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2017-05-07T12:51:28+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132711795
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-05-07T12:51:33+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132716514
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2017-05-07T12:52:24+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132767515
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2017-05-07T12:52:26+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132769046
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-05-07T12:52:31+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132774362
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-05-07T12:52:33+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132776246
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000440s ]
+
+[ 2017-05-07T12:52:39+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132782212
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2017-05-07T12:54:24+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132887154
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-05-07T12:54:27+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132890753
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2017-05-07T12:54:29+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132892197
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2017-05-07T12:54:35+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132898089
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2017-05-07T12:54:43+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132905977
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-05-07T12:54:44+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/151?_=1494132907369
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2017-05-07T12:54:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494132909873
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-05-07T12:55:01+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494132924309
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2017-05-07T12:56:21+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494133004491
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2017-05-07T12:56:32+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494133015758
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2017-05-07T12:56:44+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/twoMenuDate/up_id/147?_=1494133027202
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2017-05-07T12:56:47+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494133030326
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000413s ]
+
+[ 2017-05-07T12:57:10+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494133053777
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-05-07T12:57:20+08:00 ] 221.2.52.242 /ThinkAce/Super/Menu/oneMenuDate?_=1494133063279
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2048] Declaration of Model\SuperModel::check() should be compatible with Think\Model::check($value, $rule, $type = 'regex') /var/www/html/ThinkAce/Model/SuperModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=146 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=147 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=150 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=151 ) ORDER BY show_order  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `menu` WHERE ( up_id=0 ) ORDER BY show_order  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+

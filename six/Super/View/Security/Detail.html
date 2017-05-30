@@ -1,0 +1,197 @@
+<extend name="layout/layout" />
+
+<block name="nav">
+    <include file="Security:nav" />
+</block>
+
+<block name="tab-content">
+    
+<present name="error">
+<div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>
+
+    <strong>
+        <i class="ace-icon fa fa-times"></i>
+    </strong>
+    {$error}
+    <br>
+</div>
+</present>
+
+<present name="message">
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>
+
+    <strong>
+        <i class="ace-icon fa fa-check"></i>
+    </strong>
+    {$message}
+    页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+    <br>
+</div>
+</present>
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <div class="form-horizontal" role="form" method="post">
+            <!-- #section:elements.form -->
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">操作人：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;">{$data.name}</span>
+                    </span>
+                </div>
+            </div> 
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">操作时间：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;">{$data.created_at}</span>
+                    </span>
+                </div>
+            </div> 
+            
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">操作ip：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;">{$data.ip}</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">动作：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;">{$data.action}</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">SQL语句：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;">{$data.sql_cont}</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">操作级别：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;">{$data.db_level}</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">备注：</label>
+
+                <div class="col-sm-6">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;"><php>echo $data['bz']==""?'无':$data['bz'];</php></span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">最后更新时间：</label>
+                <div class="col-sm-9">
+                    <span class="help-inline col-xs-12 col-sm-7">
+                        <span class="middle" style="color:#000;"><php>echo $data['updated_at']=="0000-00-00 00:00:00"?$data['created_at']:$data['updated_at'];</php></span>
+                    </span>
+                </div>
+            </div>
+        </div> 
+    </div><!-- /.col -->
+</div><!-- /.row -->
+</block>
+
+
+<block name="scripts">
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#province_id').unbind('change');  
+    var pro_id = 0;
+    $("#province_id").bind('change',function(){
+        pro_id = $("#province_id").val();
+        $.ajax({
+            url:'./city_data',
+            data:{
+                id:pro_id,
+            },
+            method:'POST',
+            error:function(url){
+                var description = ""; 
+                for(var i in url){   
+                    var property=url[i];   
+                    description+=i+" = "+property+"\n";  
+                }
+                alert(description);
+            },
+            success:function(data,url){
+                var str ='<option value="0">全省</option>';
+                $.each(data,function(i,v){
+                    str+='<option value='+v["id"]+'>'+v["name"]+'</option>';
+                });
+                $('#city_id').html(str);
+                $('#district_id').html('<option value="0">请选择</option>');
+            }
+        });
+    });
+
+    $('#city_id').unbind('change');  
+    var city_id = 0;
+    $("#city_id").bind('change',function(){
+        city_id = $("#city_id").val();
+        $.ajax({
+            url:'./district_data',
+            data:{
+                id:city_id,
+            },
+            method:'POST',
+            error:function(url){
+                var description = ""; 
+                for(var i in url){   
+                    var property=url[i];   
+                    description+=i+" = "+property+"\n";  
+                }
+                alert(description);
+            },
+            success:function(data,url){
+                var str ='<option value="0">全市</option>';
+                $.each(data,function(i,v){
+                    str+='<option value='+v["id"]+'>'+v["name"]+'</option>';
+                });
+                $('#district_id').html(str);
+            }
+        });
+    });
+});
+</script>
+
+<present name="message">
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    };
+}, 1000);
+
+
+})();
+</script>
+</present>
+</block>

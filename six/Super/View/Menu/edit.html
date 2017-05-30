@@ -1,0 +1,205 @@
+<!-- <extend name="layout/layout" />
+
+<block name="nav">
+    <include file="Menu:nav" />
+</block> -->
+
+<block name="tab-content">
+    
+<present name="error">
+<div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>
+
+    <strong>
+        <i class="ace-icon fa fa-times"></i>
+    </strong>
+    {$error}
+    <br>
+</div>
+</present>
+
+<present name="message">
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>
+
+    <strong>
+        <i class="ace-icon fa fa-check"></i>
+    </strong>
+    {$message}
+     页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+    <br>
+</div>
+</present>
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <form action="__SELF__" class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+            <!-- #section:elements.form -->
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">显示顺序：</label>
+                <div class="col-sm-2">
+                   <input type="text" name="show_order" value="{$data.show_order}" class="col-xs-10 col-sm-4" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">菜单名称：</label>
+                <div class="col-sm-2">
+                   <input type="text" name="menu_name" value="{$data.menu_name}">
+                </div>
+            </div>
+            <neq name="data.type" value='5'>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">隶属菜单：</label>
+                <div class="col-sm-2">
+                   <select name="up_id" id="one">
+                       <option value="0" <?php if($data.up_id==0) echo selected; ?>>无上级菜单</option>
+                       <foreach name="info" item="vo">
+                           <option value="{$vo.id}" <eq name="vo.id" value="$data.up_id">selected</eq>>{$vo.menu_name}</option>
+                       </foreach>
+                   </select>
+                </div>
+            </div>
+            </neq>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">菜单类型：</label>
+                <div class="col-sm-2">
+                   <select name="type" id="two">
+                       <option value="0" <eq name="data.type" value="0">selected</eq>>图文混排</option>
+                       <option value="1" <eq name="data.type" value="1">selected</eq>>新闻列表</option>
+                       <option value="2" <eq name="data.type" value="2">selected</eq>>图片列表</option>
+                       <option value="3" <eq name="data.type" value="3">selected</eq>>跳转链接</option>
+                       <option value="4" <eq name="data.type" value="4">selected</eq>>下载列表</option>
+                       <option value="5" <eq name="data.type" value="5">selected</eq>>有下级菜单</option>
+                   </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">显示状态：</label>
+                <div class="col-sm-2">
+                    <div class="radio">
+                        <label>
+                            <input class="ace" checked name="state" type="radio" value="1">
+                            <span class="lbl"> 显示</span>
+                        </label>
+                        <label>
+                            <input class="ace" name="state" type="radio" value="0">
+                            <span class="lbl"> 隐藏</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">注册时间：</label>
+                <div class="col-sm-2" style="margin-top:10px">
+                   系统自动添加
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right" for="form-field-1">添加人：</label>
+                <div class="col-sm-2" style="margin-top:10px">
+                  {$Think.session.s_name}
+                </div>
+            </div>
+            <div class="clearfix form-actions">
+                <div class="col-md-offset-3 col-md-9">
+                    <button class="btn btn-info" type="submit">
+                        <i class="ace-icon fa fa-check bigger-110"></i>
+                        提交
+                    </button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button class="btn" type="reset">
+                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                        重置
+                    </button>
+                </div>
+            </div>
+            
+        </form> 
+    </div><!-- /.col -->
+</div><!-- /.row -->
+</block>
+
+
+<block name="scripts">
+
+<script type="text/javascript">
+var nowTemp = new Date();
+
+    $('#apply_start').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+    $('#apply_over').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+    $('#start').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+    $('#over').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+
+    window.onload=function(){
+    var one=document.getElementById('one');
+    var twor=document.getElementById('two');
+    var two=twor.getElementsByTagName('option');
+    var a=one.getElementsByTagName('option');
+    document.getElementById("one").onchange=function(){
+        var v = one.value;
+        if (v==a[0].value) {
+            two[5].style.display="block";
+        }else{
+            two[5].style.display="none";
+        }
+    }
+
+    twor.onchange=function(){
+        var vv = twor.value;
+        if (vv==two[3].value) {
+            for (var i = 1; i < a.length; i++) {
+            a[i].style.display="none";
+            }
+        }else{
+            for (var i = 1; i < a.length; i++) {
+            a[i].style.display="block";
+            }
+        }
+    }
+}
+
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    };
+}, 1000);
+})();
+
+</script>
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    };
+}, 1000);
+})();
+</script>
+</block>

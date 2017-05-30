@@ -1,0 +1,294 @@
+<extend name="layout/layout" />
+
+<block name="nav">
+	<include file="Links:nav" />
+</block>
+
+<block name="tab-content">
+
+    <present name="error">
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">
+                <i class="ace-icon fa fa-times"></i>
+            </button>
+
+            <strong>
+                <i class="ace-icon fa fa-times"></i>
+            </strong>
+            {$error}
+            <br>
+        </div>
+    </present>
+
+    <present name="message">
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">
+                <i class="ace-icon fa fa-times"></i>
+            </button>
+
+            <strong>
+                <i class="ace-icon fa fa-check"></i>
+            </strong>
+            {$message}
+            页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+            <br>
+        </div>
+    </present>
+            <!-- PAGE CONTENT BEGINS -->
+<div id="toolbar" class="btn-group">
+            <button id="btn_add" type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><a href="__CONTROLLER__/add" style="color:#333">新增</a>
+            </button>
+            <button id="btn_delete" type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>批量删除
+            </button>
+  <!--           <select id="priv" style="height:34px;border-radius:0px;border-left:none;color:#333">
+                <option value="维特机动车驾校"> </option>
+                <option value="红星美凯龙"> </option>
+                <option value="春秋旅行社"> </option>
+                <option value="运总医院"> </option>
+            </select>   -->
+            <select id="zl_export" style="height:34px;border-radius:0px;border-left:none;color:#333">
+                <option value="all">导出全部</option>
+                <option value="basic">导出本页</option>
+                <option value="selected">导出选中</option>
+            </select>
+        </div>
+
+<table id="tb_departments">
+
+</table>
+<!-- <div id="zl_cont"> </div> -->
+<script type="text/javascript">
+    $(function () {
+    //1.初始化Table
+    var oTable = new TableInit();
+    oTable.Init();
+
+    //2.初始化Button的点击事件
+    var oButtonInit = new ButtonInit();
+    oButtonInit.Init();
+
+    //3.初始化select的change事件
+    $("#zl_export").change(function () {
+        $('#tb_departments').bootstrapTable('refreshOptions', {
+            exportDataType: $(this).val()
+        });
+    });
+
+    $("#priv").change(function () {
+        $('#tb_departments').bootstrapTable('refreshOptions', {
+            exportDataType: $(this).val()
+        });
+    });
+
+});
+
+var TableInit = function () {
+    var oTableInit = new Object();
+    //初始化Table
+    oTableInit.Init = function () {
+        $('#tb_departments').bootstrapTable({
+            url: "__CONTROLLER__/oneLinksDate",         //请求后台的URL（*）
+            method: 'get',                      //请求方式（*）
+            toolbar: '#toolbar',                //工具按钮用哪个容器
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: false,                   //是否显示分页（*）
+            sortable: true,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            queryParams: oTableInit.queryParams,//传递参数（*）
+            sidePagination: "client",           //分页方式：client客户端分页，Factory服务端分页（*）
+            pageNumber:1,                       //初始化加载第一页，默认第一页
+            pageSize: 10,                       //每页的记录行数（*）
+            pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+            search: true,                       //是否显示表格搜索
+            // strictSearch: false, //是否启用全匹配搜索
+            showColumns: true,                  //是否显示所有的列
+            showRefresh: true,              //是否显示刷新按钮
+            // showPaginationSwitch: true,
+            minimumCountColumns: 2,             //最少允许的列数
+            // clickToSelect: true,                //是否启用点击选中行
+            // height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+            uniqueId: "id",                     //每一行的唯一标识，一般为主键列
+            showToggle:true,                    //是否显示详细视图和列表视图的切换按钮
+            cardView: false,                    //是否显示详细视图
+            // detailView: false,                   //是否显示父子表
+            showExport:true,
+            exportDataType: "basic",
+            //注册加载子表的事件。注意下这里的三个参数！
+            // onExpandRow: function (index, row, $detail) {
+            //     show(index, row, $detail);
+            // },
+            onDblClickCell:function(field,value,row,$element){
+                show(field,value,row,$element);
+            },
+            columns: [
+            {
+                checkbox: true
+            },{
+                field: 'show_order',
+                title: '显示顺序',
+            },{
+                field: 'state',
+                title: '显示状态',
+            },{
+                field: 'link_name',
+                title: '链接名称',
+            },{
+                field: 'link_addr',
+                title: '链接地址',
+            },{
+                field: 'created_at',
+                title: '添加时间',
+            },{
+                field: 'add_user',
+                title: '添加人',
+            },{
+                field:'id',
+                formatter:function(value,row,index){
+                var a='<a href="__CONTROLLER__/edit/id/'+value+'">修改</a>&nbsp;|&nbsp;<a href="__CONTROLLER__/top/id/'+value+'">置顶</a>&nbsp;|&nbsp;<a href="__ACTION__/action/del/id/'+value+'" onclick=" return del()">删除</a>';
+                    return a;
+                },
+                title: '操作',
+            },
+            ]
+        });
+    };
+
+    // function show(index, row, $detail){
+    //     return '<tr>123</tr>';
+    // }
+
+    /*批量删除操作*/
+    $("#btn_delete").click(function(event) {
+        // var check=$('#tb_departments').bootstrapTable('getSelections');
+        // var check=JSON.stringify(check);
+        // var check=$.parseJSON(check);
+        // var id_array=new Array();
+        // $.each(check,function(index, el) {
+        //     id_array.push(el.id);
+        // });
+        $table=$('#tb_departments');
+            var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
+                return row.id;
+        });
+        $.post("{$Think.const.SITE_URL}/Super/Links/allDel", {id: ids}, function(data) {
+            if(data==1){
+                $table.bootstrapTable('remove', {field: 'id', values: ids});
+            }
+            if(data==0){
+                alert("请勾选要删除的信息！");
+            }
+            if(data==2){
+                alert("批量删除菜单列表失败！");
+            }
+        });
+
+    });
+
+    //得到查询的参数
+    oTableInit.queryParams = function (params) {
+        var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+            shop_id: $("#shop_id").val()
+            // limit: params.limit,   //页面大小
+            // offset: params.offset,  //页码
+            // departmentname: $("#txt_search_departmentname").val(),
+        };
+        return temp;
+    };
+    return oTableInit;
+};
+
+
+var ButtonInit = function () {
+    var oInit = new Object();
+    var postdata = {};
+    oInit.Init = function () {
+        //初始化页面上面的按钮事件
+
+    };
+
+    return oInit;
+};
+
+</script>
+</block>
+<block name="plugins">
+</block>
+<block name="scripts">
+
+<script type="text/javascript">
+	function del() {
+		var msg = "您真的确定要删除吗？\n\n请确认！";
+		if (confirm(msg)==true){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	// jQuery(document).ready(function() {
+	// 	var active_class = 'active';
+	// 	$('#simple-table > thead > tr > th input[type=checkbox]').eq(0).on('click', function(){
+	// 		var th_checked = this.checked;//checkbox inside "TH" table header
+	// 		$(this).closest('table').find('tbody > tr').each(function(){
+	// 			var row = this;
+	// 			if(th_checked) $(row).addClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', true);
+	// 			else $(row).removeClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', false);
+	// 		});
+	// 	});
+		
+	// 	//select/deselect a row when the checkbox is checked/unchecked
+	// 	$('#simple-table').on('click', 'td input[type=checkbox]' , function(){
+	// 		var $row = $(this).closest('tr');
+	// 		if(this.checked) $row.addClass(active_class);
+	// 		else $row.removeClass(active_class);
+	// 	});
+
+	// 	/**
+	// 	 * 删除按钮警告提示
+	// 	 */
+		
+	// 	$('.delete-btn').click(function(e) {
+	// 		if (confirm('您确定要执行此操作吗？请慎重！') == false) {
+	// 			return false;
+	// 		}
+	// 	});
+		
+	// 	$('.delete-checked').click(function(e) {
+	// 		var checkbox = $('#simple-table > tbody > tr > td input[type=checkbox]:checked');
+	// 		if (!checkbox.length) {
+	// 			alert('您还没有选中任何数据！');
+	// 			return false;
+	// 		}
+	// 		if (confirm('您确定要执行此操作吗？请慎重！') == false) {
+	// 			return false;
+	// 		}
+	// 		var ids = new Array();
+	// 		checkbox.each(function () {
+	// 			ids.push([$(this).val()]);
+	// 		});
+	// 		var href = "__CONTROLLER__/Index/id" + '/' + ids;
+	// 		location.href = href;
+	// 	});
+
+	// }); 
+
+</script>
+<present name="message">
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+	var time = --wait.innerHTML;
+	if(time <= 0) {
+		location.href = href;
+		clearInterval(interval);
+	};
+}, 1000);
+})();
+</script>
+</present>
+</block>
+

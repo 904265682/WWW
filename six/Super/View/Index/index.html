@@ -1,0 +1,135 @@
+<extend name="layout/layout" />
+<block name="tab-content">
+<div class="clearfix">
+	<div class="pull-centre alert alert-success no-margin">
+		<button type="button" class="close" data-dismiss="alert">
+			<i class="ace-icon fa fa-times"></i>
+		</button>
+
+		<i class="ace-icon fa fa-umbrella bigger-120 blue"></i>
+		欢迎登【{$Think.const.SITE_TITLE}】后台管理界面！
+	</div>
+</div>
+
+<div class="hr dotted"></div>
+
+	<div id="user-profile-1" class="user-profile row">
+		<div class="col-xs-12 col-sm-3 center">
+			<div>
+				<!-- #section:pages/profile.picture -->
+				<span class="profile-picture">
+					<img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="{$Think.const.SITE_PUBLIC_UPLOADS}/Super/HeadPic/profile-pic.jpg" />
+				</span>
+
+				<!-- /section:pages/profile.picture -->
+				<div class="space-4"></div>
+
+				<div class="width-80 label label-info label-xlg arrowed-in arrowed-in-right">
+					<div class="inline position-relative">
+						<a href="#" class="user-title-label dropdown-toggle" data-toggle="dropdown">
+
+							<i class="ace-icon fa fa-circle light-green" id="user-title-label"></i>
+							&nbsp;
+							<span class="white">{$Think.session.s_name}</span>
+						</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="space-6"></div>
+
+			<!-- #section:pages/profile.contact -->
+
+			<!-- /section:pages/profile.contact -->
+			<div class="hr hr12 dotted"></div>
+
+			<!-- #section:custom/extra.grid -->
+			<div class="clearfix">
+				<div class="grid3">
+					<span class="bigger-150 blue">{$data['y']}年</span>
+
+				</div>
+
+				<div class="grid3">
+					<span class="bigger-150 blue">{$data['m']}月</span>
+
+				</div>
+				
+				<div class="grid3">
+					<span class="bigger-150 blue">{$data['d']}日</span>
+
+				</div>
+			</div>
+
+			<!-- /section:custom/extra.grid -->
+			<div class="hr hr16 dotted"></div>
+		</div>
+
+		<div class="col-xs-18 col-sm-9">
+			
+
+			<div class="space-12"></div>
+
+			<!-- #section:pages/profile.info -->
+			<div class="profile-user-info profile-user-info-striped">
+				<div class="profile-info-row">
+					<div class="profile-info-name"> 用户名 </div>
+
+					<div class="profile-info-value">
+						<span class="editable" id="username">{$Think.session.s_name}</span>
+					</div>
+				</div>
+
+				<div class="profile-info-row">
+					<div class="profile-info-name"> 地点 </div>
+
+					<div class="profile-info-value">
+						<i class="fa fa-map-marker light-orange bigger-110"></i>
+						<span class="editable" id="country">山东</span>
+						<span class="editable" id="city">日照</span>
+					</div>
+				</div>
+
+				<div class="profile-info-row">
+					<div class="profile-info-name"> 年龄 </div>
+
+					<div class="profile-info-value">
+						<span class="editable" id="age">23</span>
+					</div>
+				</div>
+				<div class="profile-info-row">
+					<div class="profile-info-name"> 上次登录时间 </div>
+
+					<div class="profile-info-value">
+						<span class="editable" id="signup">{$data['last_time']}</span>
+					</div>
+				</div>
+
+				<div class="profile-info-row">
+					<div class="profile-info-name"> 上次在线IP </div>
+
+					<div class="profile-info-value">
+						<span class="editable" id="login">
+						{$data['last_ip']}
+						</span>
+					</div>
+				</div>
+
+				<div class="profile-info-row">
+					<div class="profile-info-name"> 个人资料 </div>
+
+					<div class="profile-info-value">
+						<span class="editable" id="about">管理员</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- /section:pages/profile.info -->
+			<div class="space-20"></div>
+
+			<div class="widget-box transparent">
+			</div>
+		</div>
+	</div>
+</block>

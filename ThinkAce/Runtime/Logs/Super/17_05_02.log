@@ -1,0 +1,129 @@
+[ 2017-05-02T14:37:35+08:00 ] ::1 /ThinkAce/
+ERR: 无法加载控制器:Index
+
+[ 2017-05-02T14:39:38+08:00 ] ::1 /ThinkAce/
+ERR: 无法加载控制器:Index
+
+[ 2017-05-02T14:39:39+08:00 ] ::1 /ThinkAce/
+ERR: 无法加载控制器:Index
+
+[ 2017-05-02T14:39:41+08:00 ] ::1 /ThinkAce/
+ERR: 无法加载控制器:Index
+
+[ 2017-05-02T16:02:24+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/login
+ERR: 模板不存在:/var/www/html/ThinkAce/Super/View/Login/login.html
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/css/bootstrap.min.css
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/css/font-awesome.min.css
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/css/ace-rtl.min.css
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/css/ace.min.css
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/css/ace-fonts.css
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/css/ace.onpage-help.css
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T16:02:52+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/assets/js/jquery.min.js
+ERR: 非法操作:assets
+
+[ 2017-05-02T16:03:02+08:00 ] 61.151.226.189 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T16:05:12+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T16:05:14+08:00 ] 223.104.187.11 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T18:58:48+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T18:59:36+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:00:32+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:02:57+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:02:57+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:02:58+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:03:00+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:03:01+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/captcha.func.php
+ERR: 非法操作:inc
+
+[ 2017-05-02T19:11:12+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:11:14+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:11:16+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:11:22+08:00 ] 180.153.81.203 /ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:13:20+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/
+ERR: 非法操作:index
+
+[ 2017-05-02T19:13:25+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:13:30+08:00 ] 101.226.66.172 /ThinkAce/Super/Login
+ERR: 非法操作:index
+
+[ 2017-05-02T19:14:07+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:14:08+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:15:44+08:00 ] 112.53.75.35 //ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:15:45+08:00 ] 112.53.75.35 //ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:15:45+08:00 ] 112.53.75.35 //ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:15:54+08:00 ] 101.226.33.223 //ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:16:01+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:16:02+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/verigyImg/
+ERR: 非法操作:verigyImg
+
+[ 2017-05-02T19:25:02+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/inc/verify.public.php?man=login
+ERR: 非法操作:inc
+
+[ 2017-05-02T20:36:21+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/login
+ERR: 无法加载数据库驱动: Think\Db\Driver\
+
+[ 2017-05-02T20:42:31+08:00 ] 112.53.75.35 /ThinkAce/Super/Login/login
+ERR: Think\Controller:redirest方法不存在！
+
+[ 2017-05-02T21:44:42+08:00 ] 112.90.82.218 //ThinkAce/Super/Login/verigyImg
+ERR: 非法操作:verigyImg
+

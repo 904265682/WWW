@@ -1,0 +1,30 @@
+<extend name="layout/layout" />
+
+<block name="content">
+<!-- 面包屑导航 开始 -->
+<div class="main breadcrumb_nav trans_3">
+	<span class="layui-breadcrumb" lay-separator="—">
+	  <a href="./index.html">首页</a><a><cite>日记</cite></a>
+	</span>
+</div>
+<!-- 面包屑导航 结束 -->
+<div class="main ">
+	<div class="axis_page">	
+		<div class="axis_container">
+			<div class="y-line"></div>
+			<h1><span><i class="layui-icon">&#xe642;</i></span>个人日记</h1>
+			<ul>
+			<foreach name="data" item="da">
+				<li>
+					<div class="date"><?php $pp = $da['created_at']; echo substr($pp,0,4)."年" . substr($pp,5,2)."月" . substr($pp,8,2) . "日"; ?></div>
+					<div class="icon"><i class="layui-icon">&#xe643;</i></div>
+					<div class="diary">{$da.cont}</div>
+					<div class="clear"></div>
+				</li>
+			</foreach>
+			</ul>
+			<div class="clear"></div>
+		</div> 
+	</div>
+</div>
+</block>

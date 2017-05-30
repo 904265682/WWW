@@ -1,0 +1,191 @@
+<extend name="layout/layout" />
+
+<block name="nav">
+    <include file="Security:nav" />
+</block>
+
+<block name="tab-content">
+
+<present name="error">
+<div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>
+
+    <strong>
+        <i class="ace-icon fa fa-times"></i>
+    </strong>
+    {$error}
+    <br>
+</div>
+</present>
+
+<present name="message">
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">
+        <i class="ace-icon fa fa-times"></i>
+    </button>
+
+    <strong>
+        <i class="ace-icon fa fa-check"></i>
+    </strong>
+    {$message}
+     页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+    <br>
+</div>
+</present>
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <form action="__SELF__" class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+            <!-- #section:elements.form -->
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right"  for="form-field-1">站长姓名：</label>
+                <div class="col-sm-3">
+                   <input type="text" name="name" value="{$name}" class="col-xs-10 col-sm-12" placeholder="请输入站长姓名">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right"  for="form-field-1">站长职业：</label>
+                <div class="col-sm-3">
+                   <input type="text" name="profession" value="{$profession}" class="col-xs-10 col-sm-12" placeholder="请输入站长职业">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站长座右铭：</label>
+                <div class="col-sm-3">
+                   <input type="text" name="motto" value="{$motto}" class="col-xs-10 col-sm-12" placeholder="站长座右铭">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站长qq：</label>
+                <div class="col-sm-3">
+                   <input type="text" name="qq" value="{$qq}" class="col-xs-10 col-sm-12" placeholder="站长qq">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">交流群号码：</label>
+                <div class="col-sm-3">
+                   <input type="text" name="qqqun" value="{$qqqun}" class="col-xs-10 col-sm-12" placeholder="交流群号码">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">交流群加群代码：</label>
+                <div class="col-sm-3">
+                <textarea placeholder="请输入交流群加群代码" name="quncreate" cols="40" rows="5">{$quncreate}</textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">注册时间：</label>
+                <div class="col-sm-2" style="margin-top:10px">
+                   系统自动添加
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">添加人：</label>
+                <div class="col-sm-2" style="margin-top:10px">
+                  {$Think.session.s_name}
+                </div>
+            </div>
+            <div class="clearfix form-actions">
+                <div class="col-md-offset-3 col-md-9">
+                    <button class="btn btn-info" type="submit">
+                        <i class="ace-icon fa fa-check bigger-110"></i>
+                        提交
+                    </button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button class="btn" type="reset">
+                        <i class="ace-icon fa fa-undo bigger-110"></i>
+                        重置
+                    </button>
+                </div>
+            </div>
+            
+        </form> 
+    </div><!-- /.col -->
+</div><!-- /.row -->
+</block>
+
+
+<block name="scripts">
+
+<script type="text/javascript">
+var nowTemp = new Date();
+
+    $('#apply_start').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+    $('#apply_over').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+    $('#start').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+    $('#over').fdatepicker({
+        format: 'yyyy-mm-dd hh:ii',
+        pickTime: true
+    });
+
+    window.onload=function(){
+    var one=document.getElementById('one');
+    var twor=document.getElementById('two');
+    var two=twor.getElementsByTagName('option');
+    var a=one.getElementsByTagName('option');
+    document.getElementById("one").onchange=function(){
+        var v = one.value;
+        if (v==a[0].value) {
+            two[2].style.display="block";
+        }else{
+            two[2].style.display="none";
+        }
+    }
+
+    twor.onchange=function(){
+        var vv = twor.value;
+        if (vv==two[3].value) {
+            for (var i = 1; i < a.length; i++) {
+            a[i].style.display="none";
+            }
+        }else{
+            for (var i = 1; i < a.length; i++) {
+            a[i].style.display="block";
+            }
+        }
+    }
+}
+
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    };
+}, 1000);
+})();
+
+</script>
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    };
+}, 1000);
+})();
+</script>
+</block>

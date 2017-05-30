@@ -1,0 +1,81 @@
+<extend name="layout/layout" />
+
+<block name="content">
+<!-- 面包屑导航 开始 -->
+<div class="main breadcrumb_nav trans_3">
+	<span class="layui-breadcrumb" lay-separator="—">
+	  <a href="{$Think.const.SITE_URL}/Home/Index/index.html">首页</a><a href="#">{$tc1}</a><a><cite>{$tc2}</cite></a>
+	</span>
+</div>
+<!-- 面包屑导航 结束 -->
+<!-- 文章 开始 -->
+<div class="main">
+	<div class="page_left">	
+		<ul class="page_left_list">
+		<foreach name="mlist" item="ml">
+			<empty name="ml.pic">
+				<li class="no_pic">
+					<h2 class="title"><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$ml.id}">{$ml.title}</a></h2>
+					<div class="date_hits">
+						<span>{$ml.writer}</span>
+						<span><?php $mlt = $ml['created_at']; echo substr($mlt,0,10);?></span>
+						<span><a href="{$site_url}">{$site_name}</a></span>
+						<span class="hits"><i class="layui-icon" title="点击量"></i> {$ml.click_num} ℃</span>
+						<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
+					</div>
+					<div class="desc">{$ml.abstract}</div>
+				</li>
+			<else />
+				<li>
+					<a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$ml.id}" class="pic"><img src="{$Think.const.SITE_URL}/{$ml.pic}" alt="{$ml.title}"></a>
+					<h2 class="title"><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$ml.id}">{$ml.title}</a></h2>
+					<div class="date_hits">
+						<span>{$ml.writer}</span>
+						<span><?php $mlt = $ml['created_at']; echo substr($mlt,0,10);?></span>
+						<span><a href="{$site_url}">{$site_name}</a></span>
+						<span class="hits"><i class="layui-icon" title="点击量"></i> {$ml.click_num} ℃</span>
+						<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
+					</div>
+					<div class="desc">{$ml.abstract}</div>
+				</li>
+			</empty>
+		</foreach>
+		</ul>
+		<div id="page">
+			<ul class="pagination">
+				<li class="disabled"><span>&laquo;</span></li><li class="active"><span>1</span></li><li><a href="">2</a></li> <li><a href="">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="page_right">
+		<div class="second_categorys_container">
+			<h3>栏目导航</h3>
+			<ol class="seond_category trans_3">
+				<foreach name="dh_list" item="dh">
+					<li><a href="{$Think.const.SITE_URL}/Home/Index/mlist/id/{$dh.id}" class="layui-btn layui-btn-primary trans_1">{$dh.menu_name}</a></li>
+				</foreach>
+			</ol>
+		</div>
+		<div class="recommend_list">
+			<h3>推荐文章</h3>
+			<ol class="page_right_list trans_3">
+				<foreach name="tj" item="tj">
+				<li><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$tj.id}">{$tj.title}</a><span class="hits"> {$tj.click_num} ℃ </span></li>
+				</foreach>
+			</ol>
+		</div>
+		<div class="hot_list">
+			<h3>手机扫码访问</h3>
+			<div class="mobile_qrcode wechat_qrcode trans_3">
+				<style type="text/css">
+					#qrcode{width:100%;height: 100%;}
+					#qrcode img{width:100%;height: 100%;}
+				</style>
+				<div id="qrcode" title="{$site_url}"><canvas width="324" height="324" style="display: none;"></canvas><img alt="Scan me!" src="{$Think.const.SITE_URL}/{$qr_code}" style="display: block;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- 文章 结束 -->
+</block>

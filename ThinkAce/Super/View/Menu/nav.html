@@ -1,0 +1,41 @@
+<ul class="nav nav-tabs">
+    <li>
+        <if condition="empty($_GET['up_id']) neq false">
+            <a href="__CONTROLLER__/index">
+                <i class="green ace-icon fa fa-home bigger-120"></i>
+                菜单列表
+            </a>
+        <else />
+            <a href="__CONTROLLER__/index2/up_id/<?php echo $_GET['up_id'];?>">
+                <i class="green ace-icon fa fa-home bigger-120"></i>
+                菜单【{$updata['menu_name']}】列表
+            </a>
+        </if>
+    </li>
+
+    <li class="hidden">
+        <if condition="empty($_GET['up_id']) neq false">
+            <a href="__CONTROLLER__/add">
+                菜单添加
+            </a>
+        <else />
+            <a href="__CONTROLLER__/add/up_id/<?php echo $_GET['up_id'];?>">
+                菜单【{$updata['menu_name']}】添加
+            </a>
+        </if>
+    </li>
+
+
+    <li class="hidden">
+        <if condition="empty($_GET['up_id']) neq false">
+            <a href="__CONTROLLER__/edit">
+                菜单修改
+            </a>
+        <else />
+            <a href="__CONTROLLER__/edit/up_id/<?php echo $_GET['up_id'];?>">
+                菜单【{$data['menu_name']}】修改
+            </a>
+        </if>
+    </li>
+
+</ul>

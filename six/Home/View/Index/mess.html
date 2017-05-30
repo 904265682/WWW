@@ -1,0 +1,134 @@
+<extend name="layout/layout" />
+
+<block name="content">
+<!-- 面包屑导航 开始 -->
+<div class="main breadcrumb_nav trans_3">
+	<span class="layui-breadcrumb" lay-separator="—">
+	  <a href="{$Think.const.SITE_URL}/Home/Index/index.html">首页</a><a><cite>留言</cite></a>
+	</span>
+</div>
+<!-- 面包屑导航 结束 -->
+<div class="main">
+	<div class="page_left">	
+	<form class="layui-form feedback-form">
+		<div class="layui-form-item">
+		    <div class="" id="neirong">
+		    	<textarea name="content" lay-verify="layedit" autocomplete="off" placeholder="我要留言" class="llayui-textarea layui-hide" id="content" value="aaa"></textarea>
+		    </div>
+		</div>
+		<div class="layui-form-item">
+		    <button class="layui-btn" lay-submit="" type="submit" lay-filter="feedback">提交留言</button>
+		</div>
+	</form>
+	<ul class="feedback_list">
+<!-- 		<li>
+			<div class="feedback_member">
+			 	<div class="avatar"><img src="{$Think.const.SITE_PUBLIC_HOME}/images/laozhang_avatar.png" alt="老张头像"></div>
+				<div class="name_date"><p class="name">老张</p>
+			 	<p class="date">3天前</p></div>
+			 	<div class="feedback_content">老张不赖呀</div>
+			</div>
+			<div class="feedback_member feedback_reply">
+			 	<div class="avatar"><img src="{$Think.const.SITE_PUBLIC_HOME}/images/laozhang_avatar.png" alt="老张头像"></div>
+				<div class="name_date"><p class="name">老张</p>
+			 	<p class="date">3天前</p></div>
+			 	<div class="feedback_content reply_content">回复：老张不赖呀</div>
+			</div>
+		</li> -->
+		<foreach name="data" item="dt">
+			<li>
+				<div class="feedback_member">
+					<div class="avatar"><i class="layui-icon">&#xe612;</i></div>
+				 	<div class="name_date"><p class="name">游客留言</p>
+				 	<p class="date"><?php $dt1 = $dt['created_at']; echo substr($dt1,0,10);?></p></div>
+				 	<div class="feedback_content">{$dt.cont}</div>
+				</div>
+				<notempty name="dt.reply_on">
+				<div class="feedback_member feedback_reply">
+				 	<div class="avatar"><img src="{$Think.const.SITE_URL}/{$logo}" alt="{$site_name}"></div>
+					<div class="name_date"><p class="name">{$dt.reply_user}</p>
+				 	<p class="date"><?php $dt2 = $dt['reply_at']; echo substr($dt2,0,10);?></p></div>
+				 	<div class="feedback_content reply_content">回复：{$dt.reply}</div>
+				</div>
+				</notempty>
+			</li>
+		</foreach>
+	</ul>
+	</div>
+	<div class="page_right">
+		<div class="about_stationmaster_container">
+			<h3>博主信息</h3>
+			<ol class="page_right_list trans_3">
+				<li>姓名：{$name}</li>
+				<li>职业：{$profession}</li>
+				<li>座右铭：{$motto}</li>
+				<li>站长QQ：{$qq}</li>
+			</ol>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<script type="text/javascript">
+layui.use(['form', 'layedit'], function(){
+	var form = layui.form(),
+  	layer = layui.layer,
+  	layedit = layui.layedit,
+  	$ = layui.jquery;
+
+  //创建一个编辑器
+  var content = layedit.build('content',{
+  	tool: ['face', '|', 'left', 'center', 'right']
+    ,height: 150
+  });
+  //表单验证
+  form.verify({
+    //编辑器数据同步
+    layedit: function(value){
+      layedit.sync(content);
+      if(layedit.getText(content).length < 1){
+        return '至少得 1 个字吧...';
+      }
+    }
+
+  });
+  // //监听提交
+  // form.on('submit(feedback)', function(data){
+  // 	var is_login = false;
+  // 	$.post(
+  // 	// 	"{$Think.const.SITE_URL}/Home/Index/mess",
+  // 	// {
+  // 	// 	content : $("#content").value;
+
+  // 	// },function(data,status){
+  //  //      alert("数据: \n" + data + "\n状态: " + status);
+  //  //  }
+  // 	{
+  // 		type:"POST",
+  //       async:false,  //设置同步请求
+  //       url:'',
+  //       dataType:'json',
+  //       success:function(data) {
+  //       	if(data.code == 200){
+		//         is_login = true;
+		//     }
+  //       }
+  // 	}
+
+  // 	);
+  //   return false;
+  // });
+  	$("button").click(function(){
+  		// alert($("#neirong").children("div").last().iframe().html().body().val());
+  	    // $.post("{$Think.const.SITE_URL}/Home/Index/mess",
+  	    // {
+  	    //     name:$("#content").val()
+  	    // },
+  	    //     function(data){
+  	    //     	alert(data);
+  	    // 	}
+  	    // );
+  	});
+});
+  
+</script>
+</block>

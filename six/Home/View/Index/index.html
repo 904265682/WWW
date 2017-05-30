@@ -1,0 +1,107 @@
+<extend name="layout/layout" />
+
+<block name="content">
+<!-- banner 开始 -->
+<div class="banner">
+<div class="main index_main"> 
+	<img class="banner_pic"  src="{$Think.const.SITE_URL}/{$banner}" alt="banner_学无止境">
+</div>
+</div>
+<!-- banner 结束 -->
+<div class="main index_main">
+	<ul class="index-learn">
+		<li>
+	      <fieldset class="layui-elem-field layui-field-title">
+	        <legend>{$one_tt}</legend>
+	        <p>{$one_cont}</p>
+	      </fieldset>
+	    </li>
+	    <li>
+	      <fieldset class="layui-elem-field layui-field-title">
+	        <legend>{$two_tt}</legend>
+	        <p>{$two_cont}</p>
+	      </fieldset>
+	    </li>
+	    <li>
+	      <fieldset class="layui-elem-field layui-field-title">
+	        <legend>{$three_tt}</legend>
+	        <p>{$three_cont}</p>
+	      </fieldset>
+	    </li>
+  	</ul>
+</div>
+<!-- <div class="main index_main lzcms_banner">
+	<a href="http://www.phplaozhang.com/download-lists/13" target="_blank"><img src="{$Think.const.SITE_PUBLIC_HOME}/images/lzcms_banner.png" alt="LzCMS下载"></a>
+</div> -->
+<!-- 文章 开始 -->
+<div class="main index_main">
+	<div class="page_left">	
+	<ul class="page_left_list"> 
+		<foreach name="cont" item="cvo">
+		<empty name="cvo.pic">
+			<li class="no_pic">
+				<h2 class="title"><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$cvo.id}">{$cvo.title}</a></h2>
+				<div class="date_hits">
+					<span>{$cvo.writer}</span>
+					<span><?php $cc = $cvo['created_at']; echo substr($cc,0,10);?></span>
+					<span><a href="{$site_url}" target="_blank">{$site_name}</a></span>
+					<span class="hits"><i class="layui-icon" title="点击量"></i> {$cvo.click_num} ℃</span>
+					<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
+				</div>
+				<div class="desc">{$cvo.abstract}</div>
+			</li>
+		<else />
+			<li>
+				<a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$cvo.id}" class="pic"><img src="{$Think.const.SITE_URL}/{$cvo.pic}" alt="{$cvo.title}"></a>
+				<h2 class="title"><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$cvo.id}">{$cvo.title}</a></h2>
+				<div class="date_hits">
+					<span>{$cvo.writer}</span>
+					<span><?php $pp = $cvo['created_at']; echo substr($pp,0,10);?></span>
+					<span><a href="{$site_url}" target="_blank">{$site_name}</a></span>
+					<span class="hits"><i class="layui-icon" title="点击量"></i> {$cvo.click_num} ℃</span>
+					<p class="commonts"><i class="layui-icon" title="点击量">&#xe63a;</i> <span id="" class="cy_cmt_count">888</span></p>
+				</div>
+				<div class="desc">{$cvo.abstract}</div>
+			</li>
+			
+		</empty>
+		</foreach>
+	</ul>
+	</div>
+	<div class="page_right">
+		<div class="about_stationmaster_container">
+			<h3>博主信息</h3>
+			<ol class="page_right_list trans_3">
+				<li>姓名：{$name}</li>
+				<li>职业：{$profession}</li>
+				<li>座右铭：{$motto}</li>
+				<li>站长QQ：{$qq}</li>
+			</ol>
+		</div>
+		<div class="new_list">
+			<h3>最新文章</h3>
+			<ol class="page_right_list trans_3">
+				<foreach name="news" item="nn">
+					<li><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$nn.id}">{$nn.title}</a><span class="hits"> <?php $tt = $nn['created_at']; echo substr($tt,0,10);?> </span></li>
+				</foreach>
+			</ol>
+		</div>
+		<div class="hot_list">
+			<h3>最近热文</h3>
+			<ol class="page_right_list trans_3">
+				<foreach name="hot" item="hh">
+					<li><a href="{$Think.const.SITE_URL}/Home/Index/cont/id/{$hh.id}">{$hh.title}</a><span class="hits"> {$hh.click_num} ℃ </span></li>
+				</foreach>
+			</ol>
+		</div>
+		<h3>友情连接</h3>
+		<div class="links trans_3">
+			<foreach name="lk" item="lk">
+				<a href="{$lk.link_addr}" target="_blank">{$lk.link_name}</a>
+			</foreach>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!-- 文章 结束 -->
+</block>

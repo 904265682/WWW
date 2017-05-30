@@ -1,0 +1,427 @@
+<extend name="layout/layout" />
+
+<block name="nav">
+    <include file="Security:nav" />
+</block>
+
+<block name="tab-content">
+
+    <present name="error">
+        <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">
+                <i class="ace-icon fa fa-times"></i>
+            </button>
+
+            <strong>
+                <i class="ace-icon fa fa-times"></i>
+            </strong>
+            {$error}
+            页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+            <br>
+        </div>
+    </present>
+
+    <present name="message">
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">
+                <i class="ace-icon fa fa-times"></i>
+            </button>
+
+            <strong>
+                <i class="ace-icon fa fa-check"></i>
+            </strong>
+            {$message}
+            页面自动 <a id="href" href="<?php echo($jumpUrl); ?>">跳转</a> 等待时间： <b id="wait"><?php echo($waitSecond); ?></b>
+            <br>
+        </div>
+    </present>
+            <!-- PAGE CONTENT BEGINS -->
+
+<!--             <if condition="$grade neq 4 or session('s_name') eq 'admin'">
+            <input class="server_search" placeholder=" 操作人" id="name" name="name" type="text" style="height:34px;border-radius:0px;color:#333;margin-left: -3px;padding:0">
+            </if>
+            <input class="server_search" id="start_time" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value="" name="start_time" placeholder=" 起始时间" style="height:34px;border-radius:0px;color:#333;margin-left: -3px;padding:0">
+            <input class="server_search" id="over_time" value="" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="over_time" placeholder=" 结束时间" style="height:34px;border-radius:0px;color:#333;margin-left: -3px;border-left:none;padding:0">
+            <input id="sc" type="button" style="font-size:15px;margin-left: 10px; height:30px;width:100px;border-radius:0px;color:#333;padding:0" value="搜索">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+            <!-- <a href="" style="display:inline-block;width:100px;height:40px;border:1px solid #CCC;background:#FFF;"></a> -->
+            <!-- <a href="http://192.168.160.12"><input id="gz" type="button" style="font-size:15px;margin-left: 10px; height:30px;width:100px;border-radius:0px;color:#333;padding:0" value="日志跟踪"></a> -->
+<div id="toolbar" class="btn-group">
+            <select id="zl_export" style="height:34px;border-radius:0px;color:#333">
+                <option value="all">导出全部</option>
+                <option value="basic">导出本页</option>
+                <!-- <option value="selected">导出选中</option> -->
+            </select>
+
+             <!-- <input type="text" id="name" name="name" placeholder="请输入乡镇名称" style="height:34px;border-radius:0px;color:#333;margin-left: -3px;border-left:none;padding:0"> -->
+
+            <!-- <form method="GET" action="" accept-charset="UTF-8" class="form-inline form-search" role="form">
+                <div class="form-group col-sm-4">
+                    用户：<input class="form-control " placeholder="用户" name="kw" type="text" value="{$kw}">
+                </div>
+                <div class="form-group col-sm-14">
+                    <input  style="width:160px;height:33px;" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value="" name="start_time" placeholder="起始时间">
+                    <input  style="width:160px;height:33px;" value="" class="laydate-icon" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="over_time" placeholder="结束时间">
+                </div>
+                <div class="col-sm-2">
+                    <button type="submit" class="btn btn-info btn-xs" id="condition">
+                        <i class="ace-icon fa fa-search-plus bigger-110"></i> 搜索
+                    </button>
+                </div>
+            </form> -->
+        </div>
+
+<table id="tb_departments">
+
+</table>
+<div id="zl_cont"> </div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:60%;height:80%;overflow:scroll;overflow-x:auto;overflow-y:auto;">
+        <div class="modal-content" style="border:none">
+            <div class="modal-header" style="border:none;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body" >
+                <table class="table">
+                    <tr>
+                        <td width="17%">操作人：</td>
+                        <td id="c_name"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">操作时间：</td>
+                        <td id="c_created_at"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">操作ip：</td>
+                        <td id="c_ip"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">动作：</td>
+                        <td id="c_action"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">SQL语句：</td>
+                        <td id="c_sql_cont"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">操作级别：</td>
+                        <td id="c_db_level"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">备注：</td>
+                        <td id="c_bz"></td>
+                    </tr>
+                    <tr>
+                        <td width="17%">最后更新时间：</td>
+                        <td id="c_updated_at"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- end -->
+
+<script type="text/javascript">
+    $(function () {
+    //1.初始化Table
+    var oTable = new TableInit();
+    oTable.Init();
+
+    //2.初始化Button的点击事件
+    var oButtonInit = new ButtonInit();
+    oButtonInit.Init();
+
+    //3.初始化select的change事件
+    $("#zl_export").change(function () {
+        $('#tb_departments').bootstrapTable('refreshOptions', {
+            exportDataType: $(this).val()
+        });
+    });
+     //   $(".server_search").blur(function () {
+        //     $('#tb_departments').bootstrapTable('refresh');
+        // });
+    $('#sc').click(function() {
+        $('#tb_departments').bootstrapTable('refresh');
+    });
+
+ 
+
+});
+
+var TableInit = function () {
+    var oTableInit = new Object();
+    //初始化Table
+    oTableInit.Init = function () {
+        $('#tb_departments').bootstrapTable({
+            url: "{$Think.const.SITE_URL}Super/Security/SuperLogDate",         //请求后台的URL（*）
+            method: 'get',                      //请求方式（*）
+            toolbar: '#toolbar',                //工具按钮用哪个容器
+            striped: true,                      //是否显示行间隔色
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: true,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            queryParams: oTableInit.queryParams,//传递参数（*）
+            sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber:1,                       //初始化加载第一页，默认第一页
+            pageSize: 10,                       //每页的记录行数（*）
+            pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+            search: true,                       //是否显示表格搜索
+            // strictSearch: false, //是否启用全匹配搜索
+            showColumns: true,                  //是否显示所有的列
+            showRefresh: true,              //是否显示刷新按钮
+            // showPaginationSwitch: true,
+            minimumCountColumns: 2,             //最少允许的列数
+            // clickToSelect: true,                //是否启用点击选中行
+            // height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+            uniqueId: "id",                     //每一行的唯一标识，一般为主键列
+            showToggle:true,                    //是否显示详细视图和列表视图的切换按钮
+            cardView: false,                    //是否显示详细视图
+            // detailView: true,                   //是否显示父子表
+            showExport:true,
+            exportDataType: "basic",
+            //注册加载子表的事件。注意下这里的三个参数！
+            // onExpandRow: function (index, row, $detail) {
+            //     show(index, row, $detail);
+            // },
+            onDblClickCell:function(field,value,row,$element){
+                show(field,value,row,$element);
+            },
+            columns: [
+            // {
+            //     field: 'id',
+            //     title: '序号',
+            //     sortable:true
+            // },
+            {
+                field: 'name',
+                title: '操作人',
+                sortable:true
+            }, {
+                field: 'created_at',
+                title: '操作时间',
+            }, {
+                field: 'ip',
+                title: '操作ip'
+            }, {
+                field: 'action',
+                title: '动作',
+                sortable:true
+            }, {
+                field: 'db_level',
+                title: '操作级别',
+                sortable:true
+            }, {
+                field:'id',
+                formatter:function(value,row,index){
+                    if(typeof(row.server) == 'undefined') {
+                        var a='<a href="{$Think.const.SITE_URL}Super/Security/Detail/id/'+value+'">详情</a>';
+                    }
+                    //  else {
+                    //     var a='<a href="{$Think.const.SITE_URL}Super/LogCheck/detail/id/'+value+'">详情</a> &nbsp;<a href="http://'+row.server+'?msg='+row.name+',Sg/LogCheck/index,'+row.p_id+'"  target="_blank">跟踪</a>';//
+                    // }
+                    return a;
+                },
+                title: '操作',
+            }, 
+            ]
+        });
+    };
+
+    // 详细信息展示
+    function show(field,value,row,$element){
+        $('#myModal').modal({
+            keyboard: true
+        });
+        $("#myModalLabel").html(row.name+'--详情查看')
+        $("#c_name").html(row.name);
+        $("#c_ip").html(row.ip);
+        $("#c_created_at").html(row.created_at);
+        $("#c_updated_at").html(row.updated_at);
+        $("#c_action").html(row.action);
+        $("#c_db_level").html(row.db_level);
+        $("#c_sql_cont").html(row.sql_cont);
+
+        var bz = '无';
+        if(row.bz != '') {  
+            bz = row.bz;
+        }
+        $('#c_bz').html(bz);
+        
+     };
+
+    // 批量删除
+    $("#btn_delete").click(function(event) {
+        // var check=$('#tb_departments').bootstrapTable('getSelections');
+        // var check=JSON.stringify(check);
+        // var check=$.parseJSON(check);
+        // var id_array=new Array();
+        // $.each(check,function(index, el) {
+        //     id_array.push(el.id);
+        // });
+        $table=$('#tb_departments');
+            var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
+                return row.id;
+        });
+        $.post("{$Think.const.SITE_URL}Super/Area/p_alldel", {id: ids}, function(data) {
+            if(data==1){
+                $table.bootstrapTable('remove', {field: 'id', values: ids});
+            }
+            if(data==0){
+                alert("请先删除下级地级市！");
+            }
+        });
+
+    });
+
+    //得到查询的参数
+    oTableInit.queryParams = function (params) {
+        var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+            limit: params.limit,   //页面大小
+            offset: params.offset,  //页码
+            name:$("#name").val(),
+            start_time:$("#start_time").val(),
+            over_time:$("#over_time").val()
+        };
+        return temp;
+    };
+    return oTableInit;
+};
+
+
+var ButtonInit = function () {
+    var oInit = new Object();
+    var postdata = {};
+
+    oInit.Init = function () {
+        //初始化页面上面的按钮事件
+
+    };
+
+    return oInit;
+};
+
+$(document).ready(function(){
+    $('#condition').on('click',function() {
+        $.get(
+            "{$Think.const.SITE_URL}Super/LogCheck/log_data", 
+            {id: ids}, 
+            function(data) {
+            if(data==1){
+                $table.bootstrapTable('remove', {field: 'id', values: ids});
+            }
+            if(data==0){
+                alert("请先删除下级地级市！");
+            }
+        });
+    });
+
+
+
+
+});
+
+
+</script>
+            
+<pre>
+根据用户名、角色、时间段进行模糊组合查询，分页列表显示总服务器相关的日志信息。提供详情查看和日志跟踪功能。
+点击“查看”弹出“详情查看”选项卡，显示该日志的详细信息，如具体的SQL语句等。
+双击日志栏信息，可以弹出对应操作的相信信息。
+另外，还提供对检索结果的快速、显示切换、列选择以及丰富的数据导出功能。
+
+
+</pre>
+
+</block>
+
+
+<block name="plugins">
+
+    
+</block>
+
+
+
+
+<block name="scripts">
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+
+        /*var active_class = 'active';
+        $('#simple-table > thead > tr > th input[type=checkbox]').eq(0).on('click', function(){
+            var th_checked = this.checked;//checkbox inside "TH" table header
+            
+            $(this).closest('table').find('tbody > tr').each(function(){
+                var row = this;
+                if(th_checked) $(row).addClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', true);
+                else $(row).removeClass(active_class).find('input[type=checkbox]').eq(0).prop('checked', false);
+            });
+        });
+        
+        //select/deselect a row when the checkbox is checked/unchecked
+        $('#simple-table').on('click', 'td input[type=checkbox]' , function(){
+            var $row = $(this).closest('tr');
+            if(this.checked) $row.addClass(active_class);
+            else $row.removeClass(active_class);
+        });
+
+        *//**
+         * 删除按钮警告提示
+         *//*
+        
+        $('.delete-btn').click(function(e) {
+            if (confirm('您确定要执行此操作吗？请慎重！') == false) {
+                return false;
+            }
+        });
+        
+        $('.delete-checked').click(function(e) {
+            var checkbox = $('#simple-table > tbody > tr > td input[type=checkbox]:checked');
+            if (!checkbox.length) {
+                alert('您还没有选中任何数据！');
+                return false;
+            }
+            if (confirm('您确定要执行此操作吗？请慎重！') == false) {
+                return false;
+            }
+            var ids = new Array();
+            checkbox.each(function () {
+                ids.push([$(this).val()]);
+            });
+            var href = "{$Think.const.SITE_URL}Super/Dep/Index/id" + '/' + ids;
+            location.href = href;
+        });
+*/
+
+    });
+</script>
+<!-- 日历js -->
+    <script type="text/javascript" src="{$Think.const.SUPER_PUBLIC_URL}/js/laydate.js"></script>
+    <!-- 日历over -->
+
+<present name="message">
+
+<script type="text/javascript">
+(function(){
+var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+var interval = setInterval(function(){
+    var time = --wait.innerHTML;
+    if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+    };
+}, 1000);
+})();
+</script>
+</present>
+</block>
+
